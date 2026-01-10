@@ -51,7 +51,8 @@ tooltip {
 #window,
 #clock,
 #pulseaudio,
-#tray {
+#tray,
+#battery {
   padding: 0 6px;  
 }
 

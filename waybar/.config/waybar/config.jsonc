@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": [ "tray" ],
   "modules-center": [ "clock" ],
-  "modules-right": [ "temperature", "memory", "pulseaudio" ],
+  "modules-right": [ "temperature", "memory", "pulseaudio", "battery" ],
   "temperature": {
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -23,6 +23,16 @@
     "format": "󰕾 {volume}%",
     "format-muted": " ",
     "on-click": "alacritty -e wiremix"
+  },
+  "battery": {
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
   },
   "tray": {
     "icon-size": 24
