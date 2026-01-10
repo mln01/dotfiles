@@ -1,0 +1,17 @@
+font=Fira Sans 16
+
+background-color=#303446
+text-color=#c6d0f5
+progress-color=over #414559
+
+border-size=4
+border-color=#8caaee
+
+padding=3
+default-timeout=9000
+max-visible=4
+layer=overlay
+
+anchor=top-right
+width=350
+height=100
