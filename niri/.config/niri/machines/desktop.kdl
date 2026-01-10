@@ -8,6 +8,7 @@ output "DP-3" {
 
 output "HDMI-A-1" {
     mode "3840x2160@60.000"
+    backdrop-color "#292c3c"
     scale 2.5
     position x=0 y=-864
 }
