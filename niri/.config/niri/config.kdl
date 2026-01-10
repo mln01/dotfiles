@@ -8,6 +8,11 @@ input {
             layout "hu"
         }
     }
+    touchpad {
+        tap
+        natural-scroll
+        accel-speed -0.2
+    }
     mouse {
         accel-speed -0.1
         accel-profile "flat"
@@ -70,7 +75,7 @@ binds {
     Mod+G { spawn "steam"; }
     Mod+Shift+G { spawn "heroic"; }
     Mod+Y { spawn "freetube"; }
-        
+
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
@@ -91,7 +96,7 @@ binds {
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
-    
+
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+Up    { move-window-up; }
