@@ -52,7 +52,8 @@ tooltip {
 #clock,
 #pulseaudio,
 #tray,
-#battery {
+#battery,
+#backlight {
   padding: 0 6px;  
 }
 
