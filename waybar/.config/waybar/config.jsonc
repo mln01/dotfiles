@@ -3,7 +3,7 @@
   "position": "top",
   "modules-left": [ "tray" ],
   "modules-center": [ "clock" ],
-  "modules-right": [ "temperature", "memory", "pulseaudio", "battery" ],
+  "modules-right": [ "temperature", "memory", "pulseaudio", "backlight", "battery" ],
   "temperature": {
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -33,6 +33,11 @@
     "format": "{icon} {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "max-length": 25
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", ""]
   },
   "tray": {
     "icon-size": 24
