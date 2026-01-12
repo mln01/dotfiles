@@ -10,7 +10,7 @@ title = "Alacritty"
 
 [font]
 normal.family = "CaskaydiaCove Nerd Font"
-size = 16
+size = 15
 
 [cursor]
 style = { shape = "Block", blinking = "Off" }
