@@ -24,7 +24,7 @@ input {
 include "machines/current.kdl"
 
 layout {
-    gaps 16
+    gaps 10
     center-focused-column "never"
 
     always-center-single-column
@@ -39,14 +39,14 @@ layout {
     default-column-width { proportion 0.75; }
 
     focus-ring {
-        width 4
+        width 3
 
         active-color "#8caaee"
         inactive-color "#51576d"
     }
 
     border {
-        width 4
+        width 3
 
         active-color "#8caaee"
         inactive-color "#51576d"
@@ -81,8 +81,8 @@ binds {
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+5%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "5%-"; }
 
     Mod+O repeat=false { toggle-overview; }
 
