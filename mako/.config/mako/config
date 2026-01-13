@@ -8,10 +8,10 @@ border-size=4
 border-color=#8caaee
 
 padding=3
-default-timeout=9000
+default-timeout=7000
 max-visible=4
 layer=overlay
 
 anchor=top-right
-width=350
+width=400
 height=100
