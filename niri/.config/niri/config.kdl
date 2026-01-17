@@ -69,7 +69,7 @@ binds {
     Mod+D { spawn "fuzzel"; }
     Super+Shift+L { spawn "swaylock"; }
     Mod+M { spawn "cider"; }
-    Mod+B { spawn "brave-nightly"; }
+    Mod+B { spawn "brave"; }
     Mod+E { spawn "nemo"; }
     Mod+T { spawn "alacritty" "-e" "btop"; }
     Mod+G { spawn "steam"; }
