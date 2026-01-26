@@ -43,7 +43,7 @@ tooltip {
   background-color: @base;
   color: @text;
   border-radius: 0;
-  border: solid 2px @lavender;
+  border: solid 2px @blue;
 }
 
 #temperature,
@@ -60,6 +60,6 @@ tooltip {
 #tray menu {
   background-color: @base;
   color: @text;
-  border: 2px solid @lavender;
+  border: 2px solid @blue;
   border-radius: 0;
 }
