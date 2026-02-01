@@ -1,9 +1,0 @@
-output "eDP-1" {
-    // off
-    mode "1920x1080@60.020"
-    backdrop-color "#292c3c"
-    scale 1.25
-    // variable-refresh-rate // on-demand=true
-    focus-at-startup
-    position x=0 y=0
-}
