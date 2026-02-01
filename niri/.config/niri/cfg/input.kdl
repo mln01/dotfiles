@@ -1,0 +1,21 @@
+input {
+    keyboard {
+        xkb {
+            layout "hu"
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+        accel-speed -0.2
+    }
+
+    mouse {
+        accel-speed -0.3
+        accel-profile "flat"
+    }
+
+    warp-mouse-to-focus
+    focus-follows-mouse max-scroll-amount="95%"
+}
