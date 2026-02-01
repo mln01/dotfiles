@@ -2,7 +2,7 @@ binds {
     Mod+Return { spawn "alacritty" "-e" "tmux"; }
     Mod+D { spawn "fuzzel"; }
     Super+Shift+L { spawn "swaylock"; }
-    Mod+M { spawn "cider"; }
+    Mod+M { spawn "tidal-hifi"; }
     Mod+B { spawn "brave"; }
     Mod+E { spawn "thunar"; }
     Mod+T { spawn "alacritty" "-e" "btop"; }
