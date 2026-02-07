@@ -31,35 +31,77 @@
 
 * {
   font-family: CaskaydiaCove Nerd Font;
-  font-size: 22px;
+  padding: 0.5px;
+  box-shadow: none;
+  border: none;
+  outline: none;
 }
 
 window#waybar {
-  background-color: @mantle;
   color: @text;
+  background: rgba(48,52,70,0.90);
 }
 
 tooltip {
   background-color: @base;
   color: @text;
   border-radius: 0;
-  border: solid 2px @blue;
+  border: solid 2px @peach;
 }
 
-#temperature,
 #memory,
-#window,
 #clock,
 #pulseaudio,
 #tray,
 #battery,
 #backlight {
-  padding: 0 6px;  
+  padding: 0 6px;
+  font-size: 24px;
+  font-weight: bold;
+  background: @glass;
+  margin: 0 4px;
+  border-radius: 999px;
+  color: @subtext0;
 }
+
+#backlight {
+  color: @lavender;
+}
+
+#clock {
+  color: @yellow;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 1px 12px;
+  border-radius: 999px;
+  background: @surface0;
+}
+
+#memory {
+  color: @pink;
+}
+
+#pulseaudio {
+  color: @green;
+}
+
+#battery.warning {
+  color: @peach;
+}
+
+#battery.critical {
+  color: @red;
+}
+
+#battery.charging,
+#battery.full {
+  color: @green;
+}
+
 
 #tray menu {
   background-color: @base;
   color: @text;
-  border: 2px solid @blue;
+  border: 2px solid @peach;
   border-radius: 0;
 }
