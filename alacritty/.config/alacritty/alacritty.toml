@@ -9,8 +9,8 @@ decorations = "None"
 title = "Alacritty"
 
 [font]
-normal.family = "CaskaydiaCove Nerd Font"
-size = 15
+normal.family = "CaskaydiaCove Nerd Font Mono"
+size = 18
 
 [cursor]
 style = { shape = "Block", blinking = "Off" }
