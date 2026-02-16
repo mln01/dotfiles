@@ -1,0 +1,19 @@
+font=SF Pro 12.3
+
+background-color=#303446FB
+text-color=#c6d0f5
+progress-color=over #414559FB
+
+border-size=3
+border-radius=10
+border-color=#babbf1
+
+margin=4,4
+padding=4,4
+default-timeout=7000
+max-visible=2
+layer=overlay
+
+anchor=top-center
+width=280
+height=100

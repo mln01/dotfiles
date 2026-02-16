@@ -1,0 +1,22 @@
+[general]
+import = ["./themes/catppuccin_frappe.toml"]
+
+[window]
+opacity = 1.0
+padding.x = 4
+padding.y = 4
+decorations = "None"
+title = "Alacritty"
+
+[font]
+normal.family = "CaskaydiaCove Nerd Font Mono"
+size = 15
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+[terminal]
+shell = { program = "/usr/bin/fish", args = ["-l"] }
+
+[mouse]
+hide_when_typing = true
