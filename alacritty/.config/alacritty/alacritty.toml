@@ -1,16 +1,16 @@
 [general]
-import = ["./themes/catppuccin_frappe.toml"]
+import = ["./themes/github_dark.toml"]
 
 [window]
 opacity = 1.0
-padding.x = 4
-padding.y = 4
+padding.x = 6
+padding.y = 6
 decorations = "None"
 title = "Alacritty"
 
 [font]
-normal.family = "CaskaydiaCove Nerd Font Mono"
-size = 15
+normal.family = "Cascadia Mono"
+size = 17
 
 [cursor]
 style = { shape = "Block", blinking = "Off" }
