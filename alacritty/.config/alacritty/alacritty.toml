@@ -1,5 +1,6 @@
 [general]
-import = ["./themes/github_dark.toml"]
+# import = ["./themes/github_dark.toml"]
+import = ["./themes/catppuccin_frappe.toml"]
 
 [window]
 opacity = 1.0
@@ -10,7 +11,7 @@ title = "Alacritty"
 
 [font]
 normal.family = "Cascadia Mono"
-size = 17
+size = 16.6
 
 [cursor]
 style = { shape = "Block", blinking = "Off" }

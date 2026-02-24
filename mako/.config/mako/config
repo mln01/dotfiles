@@ -5,7 +5,7 @@ text-color=#c6d0f5
 progress-color=over #414559FB
 
 border-size=3
-border-radius=10
+border-radius=0
 border-color=#babbf1
 
 margin=4,4

@@ -1,0 +1,72 @@
+@define-color base rgba(48, 52, 70, 0.95);
+@define-color mantle rgba(41, 44, 60, 0.95);
+@define-color crust rgba(35, 38, 52, 0.95);
+
+@define-color surface0 rgba(65, 69, 89, 0.95);
+@define-color surface1 rgba(81, 87, 109, 0.95);
+@define-color surface2 rgba(98, 104, 128, 0.95);
+
+@define-color overlay0 rgba(115, 121, 148, 0.95);
+@define-color overlay1 rgba(131, 139, 167, 0.95);
+@define-color overlay2 rgba(148, 156, 187, 0.95);
+
+@define-color text rgba(198, 208, 245, 0.95);
+@define-color subtext0 rgba(165, 173, 206, 0.95);
+@define-color subtext1 rgba(181, 191, 226, 0.95);
+
+@define-color rosewater rgba(242, 213, 207, 0.95);
+@define-color flamingo rgba(238, 190, 190, 0.95);
+@define-color pink rgba(244, 184, 228, 0.95);
+@define-color mauve rgba(202, 158, 230, 0.95);
+@define-color red rgba(231, 130, 132, 0.95);
+@define-color maroon rgba(234, 153, 156, 0.95);
+@define-color peach rgba(239, 159, 118, 0.95);
+@define-color yellow rgba(229, 200, 144, 0.95);
+@define-color green rgba(166, 209, 137, 0.95);
+@define-color teal rgba(129, 200, 190, 0.95);
+@define-color sky rgba(153, 209, 219, 0.95);
+@define-color sapphire rgba(133, 193, 220, 0.95);
+@define-color blue rgba(140, 170, 238, 0.95);
+@define-color lavender rgba(186, 187, 241, 0.95);
+
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 17px;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+window#waybar {
+    background: @base;
+    color: @text;
+}
+
+tooltip {
+    color: @text;
+    background: @base;
+}
+
+#workspaces,
+#mpris {
+    padding-left: 6px;
+}
+
+#tray,
+#privacy,
+#wireplumber,
+#backlight,
+#battery,
+#clock {
+    padding-right: 6px;
+}
+
+#workspaces button {}
+
+#workspaces button.active {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
