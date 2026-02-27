@@ -18,6 +18,7 @@
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} <i>{dynamic}</i>",
         "dynamic-len": 50,
+        "interval": 10,
         "player-icons": {
             "default": "▶",
             "chromium": "󰎆",
@@ -26,9 +27,7 @@
         "status-icons": {
             "paused": "⏸"
         },
-        "ignored-players": [
-            "firefox"
-        ]
+        "ignored-players": []
     },
     "tray": {
         "icon-size": 21,
