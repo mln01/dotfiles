@@ -52,6 +52,7 @@ tooltip {
 }
 
 #tray,
+#temperature,
 #privacy,
 #wireplumber,
 #backlight,
@@ -68,5 +69,17 @@ tooltip {
 }
 
 #workspaces button.urgent {
+    color: @red;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning {
+    color: @peach;
+}
+
+#battery.critical {
     color: @red;
 }

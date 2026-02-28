@@ -8,6 +8,7 @@
     ],
     "modules-right": [
         "tray",
+        "temperature",
         "privacy",
         "wireplumber",
         "backlight",
@@ -33,6 +34,12 @@
         "icon-size": 21,
         "spacing": 10,
         "icons": {}
+    },
+    "temperature": {
+        "thermal-zone": 8,
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C "
     },
     "privacy": {
         "icon-spacing": 4,
@@ -70,7 +77,7 @@
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-muted": "",
-        "on-click": "alacritty -e wiremix",
+        "on-click": "ghostty -e wiremix",
         "max-volume": 100,
         "format-icons": [
             "",
@@ -93,14 +100,34 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "max-length": 25
+        "format-icons": {
+            "default": [
+                "󰂎",
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ],
+            "charging": [
+                "󰢟",
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ]
+        },
     },
     "clock": {
         "interval": 60,
