@@ -132,6 +132,7 @@
     "clock": {
         "interval": 60,
         "format": "{:%m-%d %H:%M}",
-        "max-length": 25
+        "max-length": 25,
+        "tooltip": false
     }
 }
