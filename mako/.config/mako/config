@@ -1,11 +1,11 @@
-font=SF Pro 12.3
+font=SF Pro 13.3
 
 background-color=#303446FB
 text-color=#c6d0f5
 progress-color=over #414559FB
 
 border-size=3
-border-radius=0
+border-radius=12
 border-color=#babbf1
 
 margin=4,4
