@@ -1,138 +1,106 @@
 {
-    "layer": "top",
-    "position": "top",
-    "spacing": 6,
-    "modules-left": [
-        "hyprland/workspaces",
-        "mpris"
+  "layer": "bottom",
+  "position": "top",
+  "margin": 3,
+  "spacing": 6,
+  "reload_style_on_change": true,
+  "modules-left": ["hyprland/workspaces", "mpris"],
+  "modules-right": [
+    "tray",
+    "temperature",
+    "privacy",
+    "wireplumber",
+    "backlight",
+    "battery",
+    "clock",
+  ],
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "dynamic-len": 50,
+    "interval": 10,
+    "player-icons": {
+      "default": "▶",
+      "chromium": "󰎆",
+      "mpv": "🎵",
+    },
+    "status-icons": {
+      "paused": "⏸",
+    },
+    "ignored-players": [],
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "icons": {},
+  },
+  "temperature": {
+    "thermal-zone": 8,
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C ",
+  },
+  "privacy": {
+    "icon-spacing": 4,
+    "icon-size": 18,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 24,
+      },
+      {
+        "type": "audio-out",
+        "tooltip": true,
+        "tooltip-icon-size": 24,
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 24,
+      },
     ],
-    "modules-right": [
-        "tray",
-        "temperature",
-        "privacy",
-        "wireplumber",
-        "backlight",
-        "battery",
-        "clock"
+    "ignore-monitor": true,
+    "ignore": [
+      {
+        "type": "audio-in",
+        "name": "cava",
+      },
+      {
+        "type": "screenshare",
+        "name": "obs",
+      },
     ],
-    "mpris": {
-        "format": "{player_icon} {dynamic}",
-        "format-paused": "{status_icon} <i>{dynamic}</i>",
-        "dynamic-len": 50,
-        "interval": 10,
-        "player-icons": {
-            "default": "▶",
-            "chromium": "󰎆",
-            "mpv": "🎵"
-        },
-        "status-icons": {
-            "paused": "⏸"
-        },
-        "ignored-players": []
+  },
+  "wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "on-click": "ghostty -e wiremix",
+    "max-volume": 100,
+    "format-icons": ["", "", ""],
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃛", "󰃞"],
+  },
+  "battery": {
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15,
     },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10,
-        "icons": {}
+    "format": "{icon} {capacity}%",
+    "format-icons": {
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
     },
-    "temperature": {
-        "thermal-zone": 8,
-        "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C ",
-        "format": "{temperatureC}°C "
-    },
-    "privacy": {
-        "icon-spacing": 4,
-        "icon-size": 18,
-        "transition-duration": 250,
-        "modules": [
-            {
-                "type": "screenshare",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            },
-            {
-                "type": "audio-out",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            },
-            {
-                "type": "audio-in",
-                "tooltip": true,
-                "tooltip-icon-size": 24
-            }
-        ],
-        "ignore-monitor": true,
-        "ignore": [
-            {
-                "type": "audio-in",
-                "name": "cava"
-            },
-            {
-                "type": "screenshare",
-                "name": "obs"
-            }
-        ],
-    },
-    "wireplumber": {
-        "format": "{icon} {volume}%",
-        "format-muted": "",
-        "on-click": "ghostty -e wiremix",
-        "max-volume": 100,
-        "format-icons": [
-            "",
-            "",
-            ""
-        ]
-    },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": [
-            "󰃛",
-            "󰃞"
-        ]
-    },
-    "battery": {
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-icons": {
-            "default": [
-                "󰂎",
-                "󰁺",
-                "󰁻",
-                "󰁼",
-                "󰁽",
-                "󰁾",
-                "󰁿",
-                "󰂀",
-                "󰂁",
-                "󰂂",
-                "󰁹"
-            ],
-            "charging": [
-                "󰢟",
-                "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
-            ]
-        },
-    },
-    "clock": {
-        "interval": 60,
-        "format": "{:%m-%d %H:%M}",
-        "max-length": 25,
-        "tooltip": false
-    }
+  },
+  "clock": {
+    "interval": 60,
+    "format": "{:%m-%d %H:%M}",
+    "max-length": 25,
+    "tooltip": false,
+  },
 }

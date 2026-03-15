@@ -31,8 +31,8 @@
 
 * {
     font-family: "JetBrains Mono Nerd Font";
-    font-size: 17px;
-    border-radius: 0;
+    font-size: 18px;
+    border-radius: 16px;
     font-weight: 600;
 }
 
@@ -48,7 +48,7 @@ tooltip {
 
 #workspaces,
 #mpris {
-    padding-left: 6px;
+    padding-left: 16px;
 }
 
 #tray,
@@ -58,14 +58,17 @@ tooltip {
 #backlight,
 #battery,
 #clock {
-    padding-right: 6px;
+    padding-right: 16px;
 }
 
-#workspaces button {}
+#workspaces button {
+    border-radius: 0;
+}
 
 #workspaces button.active {
     color: @blue;
     border-bottom: 2px solid @blue;
+    border-radius: 0;
 }
 
 #workspaces button.urgent {
