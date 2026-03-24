@@ -1,19 +1,11 @@
 {
   "layer": "bottom",
   "position": "top",
-  "margin": 3,
-  "spacing": 6,
+  "margin": 2,
+  "spacing": 5,
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "mpris"],
-  "modules-right": [
-    "tray",
-    "temperature",
-    "privacy",
-    "wireplumber",
-    "backlight",
-    "battery",
-    "clock",
-  ],
+  "modules-right": ["tray", "privacy", "wireplumber", "battery", "clock"],
   "mpris": {
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
@@ -32,13 +24,8 @@
   "tray": {
     "icon-size": 21,
     "spacing": 10,
+    "tooltip": false,
     "icons": {},
-  },
-  "temperature": {
-    "thermal-zone": 8,
-    "critical-threshold": 80,
-    "format-critical": "{temperatureC}°C ",
-    "format": "{temperatureC}°C ",
   },
   "privacy": {
     "icon-spacing": 4,
@@ -80,13 +67,9 @@
     "max-volume": 100,
     "format-icons": ["", "", ""],
   },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon} {percent}%",
-    "format-icons": ["󰃛", "󰃞"],
-  },
   "battery": {
     "interval": 60,
+    "tooltip": false,
     "states": {
       "warning": 30,
       "critical": 15,
