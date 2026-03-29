@@ -28,7 +28,7 @@
 * {
     font-family: "JetBrains Mono Nerd Font";
     font-size: 18px;
-    border-radius: 16px;
+    border-radius: 24px;
     font-weight: 600;
 }
 
@@ -57,14 +57,9 @@ tooltip {
     padding-right: 16px;
 }
 
-#workspaces button {
-    border-radius: 0;
-}
-
 #workspaces button.active {
     background: @blue;
     color: @base;
-    border-radius: 0;
 }
 
 #workspaces button.urgent {
