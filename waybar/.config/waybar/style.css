@@ -33,13 +33,13 @@
 }
 
 window#waybar {
-    background: @base;
+    background: @mantle;
     color: @text;
 }
 
 tooltip {
     color: @text;
-    background: @base;
+    background: @mantle;
 }
 
 #workspaces,
@@ -59,12 +59,12 @@ tooltip {
 
 #workspaces button.active {
     background: @blue;
-    color: @base;
+    color: @mantle;
 }
 
 #workspaces button.urgent {
     background: @red;
-    color: @base;
+    color: @mantle;
 }
 
 #battery.charging {
