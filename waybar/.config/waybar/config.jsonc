@@ -2,7 +2,7 @@
   "layer": "bottom",
   "position": "top",
   "margin": 2,
-  "spacing": 5,
+  "spacing": 4,
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "mpris"],
   "modules-right": ["tray", "privacy", "wireplumber", "battery", "clock"],
@@ -22,8 +22,8 @@
     "ignored-players": [],
   },
   "tray": {
-    "icon-size": 21,
-    "spacing": 10,
+    "icon-size": 18,
+    "spacing": 8,
     "tooltip": false,
     "icons": {},
   },
@@ -63,7 +63,7 @@
   "wireplumber": {
     "format": "{icon} {volume}%",
     "format-muted": "",
-    "on-click": "ghostty -e wiremix",
+    "on-click": "pavucontrol",
     "max-volume": 100,
     "format-icons": ["", "", ""],
   },

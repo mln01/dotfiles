@@ -1,0 +1,8 @@
+require("themes/frappe")
+require("cfg/monitor")
+require("cfg/autostart")
+require("cfg/env")
+require("cfg/lookandfeel")
+require("cfg/input")
+require("cfg/binds")
+require("cfg/windowworkspace")

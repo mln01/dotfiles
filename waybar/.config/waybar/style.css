@@ -27,8 +27,8 @@
 
 * {
     font-family: "JetBrains Mono Nerd Font";
-    font-size: 18px;
-    border-radius: 24px;
+    font-size: 17.6px;
+    border-radius: 16px;
     font-weight: 600;
 }
 
@@ -44,7 +44,7 @@ tooltip {
 
 #workspaces,
 #mpris {
-    padding-left: 16px;
+    padding-left: 8px;
 }
 
 #tray,
@@ -54,7 +54,7 @@ tooltip {
 #backlight,
 #battery,
 #clock {
-    padding-right: 16px;
+    padding-right: 12px;
 }
 
 #workspaces button.active {
