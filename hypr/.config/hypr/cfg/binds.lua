@@ -5,10 +5,10 @@ local menu = "fuzzel"
 local browser = "brave-origin-nightly"
 local editor = "zeditor"
 local lock = "hyprlock"
-local music = "tidal-hifi"
+local music = "cider"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
-local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
+hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + E",hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
@@ -46,5 +46,5 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output"))
-hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(mainMod .. " + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m output"))

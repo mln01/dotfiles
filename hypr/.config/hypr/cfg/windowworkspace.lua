@@ -29,7 +29,7 @@ hl.window_rule({
         class = "com.mitchellh.ghostty",
     },
 
-    workspace = 1
+    workspace = 1,
 })
 
 hl.window_rule({
@@ -39,7 +39,7 @@ hl.window_rule({
         class = "brave-origin-nightly",
     },
 
-    workspace = 2
+    workspace = 2,
 })
 
 hl.window_rule({
@@ -49,7 +49,7 @@ hl.window_rule({
         class = "dev.zed.Zed",
     },
 
-    workspace = 3
+    workspace = 3,
 })
 
 hl.window_rule({
@@ -59,17 +59,17 @@ hl.window_rule({
         class = "nemo",
     },
 
-    workspace = 5
+    workspace = 5,
 })
 
 hl.window_rule({
     name = "tidal-w9",
 
     match = {
-        class = "tidal-hifi",
+        class = "Cider",
     },
 
-    workspace = 9
+    workspace = 9,
 })
 
 hl.window_rule({
@@ -79,5 +79,5 @@ hl.window_rule({
         class = "localsend",
     },
 
-    workspace = 8
+    workspace = 8,
 })
