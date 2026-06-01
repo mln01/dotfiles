@@ -1,0 +1,39 @@
+# dotfiles
+
+Personal dotfiles managed with GNU Stow.
+
+## Script Install
+
+```sh
+chmod +x install.sh
+./install.sh
+```
+
+## Manual Install
+
+User config packages target `$HOME` by default:
+
+```sh
+stow fuzzel ghostty hypr mako waybar
+```
+
+System-level packages target `/` and need root privileges:
+
+```sh
+sudo stow -t / sddm
+```
+
+## Packages
+
+- `fuzzel` - app launcher config
+- `ghostty` - terminal config
+- `hypr` - Hyprland config
+- `mako` - notification daemon config
+- `sddm` - SDDM config and theme files
+- `waybar` - Waybar config
+
+## Notes
+
+Run Stow commands from the root of this repository.
+
+The `sddm` package contains files for `/etc` and `/usr/share`, so it should be installed separately with `sudo stow -t / sddm`.
