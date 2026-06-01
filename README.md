@@ -22,12 +22,3 @@ System-level packages target `/` and need root privileges:
 ```sh
 sudo stow -t / sddm
 ```
-
-## Packages
-
-- `fuzzel` - app launcher config
-- `ghostty` - terminal config
-- `hypr` - Hyprland config
-- `mako` - notification daemon config
-- `sddm` - SDDM config and theme files
-- `waybar` - Waybar config
