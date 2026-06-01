@@ -14,11 +14,11 @@ chmod +x install.sh
 User config packages target `$HOME` by default:
 
 ```sh
-stow fuzzel ghostty hypr mako waybar
+stow name
 ```
 
 System-level packages target `/` and need root privileges:
 
 ```sh
-sudo stow -t / sddm
+sudo stow -t / name
 ```
