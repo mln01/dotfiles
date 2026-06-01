@@ -31,9 +31,3 @@ sudo stow -t / sddm
 - `mako` - notification daemon config
 - `sddm` - SDDM config and theme files
 - `waybar` - Waybar config
-
-## Notes
-
-Run Stow commands from the root of this repository.
-
-The `sddm` package contains files for `/etc` and `/usr/share`, so it should be installed separately with `sudo stow -t / sddm`.
