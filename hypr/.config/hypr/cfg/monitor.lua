@@ -6,7 +6,7 @@ hl.monitor({
 })
 
 hl.monitor({
-    output = "DP-3",
+    output = "DP-1",
     mode = "2560x1440@180.00",
     position = "auto",
     scale = 1.25
