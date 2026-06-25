@@ -11,10 +11,3 @@ hl.monitor({
     position = "auto",
     scale = 1.25
 })
-
-hl.monitor({
-    output = "HDMI-A-1",
-    mode = "3840x2160@60.00",
-    position = "auto-center-up",
-    scale = 2
-})

@@ -66,7 +66,7 @@ hl.window_rule({
     name = "tidal-w9",
 
     match = {
-        class = "Cider",
+        class = "cider",
     },
 
     workspace = 9,

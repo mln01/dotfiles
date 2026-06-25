@@ -14,7 +14,7 @@ window-padding-y = 5
 keybind = alt+shift+r=reload_config
 
 keybind = alt+h=goto_split:left
-keybind = alt+j=goto_split:down
+# keybind = alt+j=goto_split:down
 keybind = alt+k=goto_split:up
 keybind = alt+l=goto_split:right
 
@@ -29,6 +29,7 @@ keybind = alt+i=new_split:right
 keybind = alt+f=toggle_split_zoom
 
 keybind = alt+t=new_tab
+keybind = alt+shift+t=move_tab:-1
 
 keybind = alt+o=toggle_tab_overview
 
