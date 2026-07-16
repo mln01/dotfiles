@@ -6,6 +6,9 @@
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "mpris"],
   "modules-right": ["tray", "privacy", "network", "wireplumber", "battery", "clock"],
+  "hyprland/workspaces": {
+    "tooltip": false,
+  },
   "mpris": {
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
@@ -68,7 +71,7 @@
     "max-length": 50
   },
   "wireplumber": {
-    "format": "{icon} {volume}%",
+    "format": " {icon} {volume}%",
     "format-muted": "",
     "on-click": "pavucontrol",
     "max-volume": 100,
