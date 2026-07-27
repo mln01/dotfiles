@@ -21,21 +21,15 @@ hl.config({
         rounding         = 12,
         rounding_power   = 2,
 
-        active_opacity   = 0.96,
-        inactive_opacity = 0.90,
+        active_opacity   = 1,
+        inactive_opacity = 1,
     
         shadow = {
-            enabled      = true,
-            range        = 4,
-            render_power = 3,
-            color        = 0xee1a1a1a,
+            enabled      = false,
         },
 
         blur = {
-            enabled   = true,
-            size      = 3,
-            passes    = 1,
-            vibrancy  = 0.1696,
+            enabled   = false,
         },
     },
 
