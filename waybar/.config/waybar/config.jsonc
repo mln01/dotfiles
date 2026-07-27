@@ -2,10 +2,10 @@
   "layer": "bottom",
   "position": "top",
   "margin": 2,
-  "spacing": 4,
   "reload_style_on_change": true,
-  "modules-left": ["hyprland/workspaces", "mpris"],
-  "modules-right": ["tray", "privacy", "network", "wireplumber", "battery", "clock"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["mpris"],
+  "modules-right": ["tray", "network", "wireplumber", "battery", "clock"],
   "hyprland/workspaces": {
     "tooltip": false,
   },
@@ -14,6 +14,7 @@
     "format-paused": "{status_icon} <i>{dynamic}</i>",
     "dynamic-len": 50,
     "interval": 10,
+    "tooltip": false,
     "player-icons": {
       "default": "",
     },
@@ -28,46 +29,11 @@
     "tooltip": false,
     "icons": {},
   },
-  "privacy": {
-    "icon-spacing": 4,
-    "icon-size": 18,
-    "transition-duration": 250,
-    "modules": [
-      {
-        "type": "screenshare",
-        "tooltip": true,
-        "tooltip-icon-size": 24,
-      },
-      {
-        "type": "audio-out",
-        "tooltip": true,
-        "tooltip-icon-size": 24,
-      },
-      {
-        "type": "audio-in",
-        "tooltip": true,
-        "tooltip-icon-size": 24,
-      },
-    ],
-    "ignore-monitor": true,
-    "ignore": [
-      {
-        "type": "audio-in",
-        "name": "cava",
-      },
-      {
-        "type": "screenshare",
-        "name": "obs",
-      },
-    ],
-  },
   "network": {
     "format-wifi": "",
     "format-ethernet": "",
     "format-disconnected": "Disconnected",
-    "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
-    "tooltip-format-ethernet": "{ifname}  ",
-    "tooltip-format-disconnected": "Disconnected",
+    "tooltip": false,
     "max-length": 50
   },
   "wireplumber": {
@@ -75,6 +41,7 @@
     "format-muted": "",
     "on-click": "pavucontrol",
     "max-volume": 100,
+    "tooltip": false,
     "format-icons": ["", "", ""],
   },
   "battery": {

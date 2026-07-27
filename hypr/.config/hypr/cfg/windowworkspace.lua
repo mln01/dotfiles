@@ -63,13 +63,13 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "tidal-w9",
+    name = "music-w10",
 
     match = {
         class = "cider",
     },
 
-    workspace = 9,
+    workspace = 10,
 })
 
 hl.window_rule({
