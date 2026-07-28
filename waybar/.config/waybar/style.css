@@ -26,51 +26,62 @@
 @define-color crust #232634;
 
 * {
-    border-radius: 12px;
-    font-family: JetBrains Mono NF;
+    font-family: "JetBrainsMono Nerd Font Propo";
     font-size: 16px;
-    font-weight: 700;
-    min-height: 0;
+    font-weight: 500;
+    border-radius: 0px;
 }
 
 window#waybar {
-    background: @mantle;
+    /*border-radius: 8px; */
+    background: @base;
     color: @text;
 }
 
 tooltip {
+    background: @base;
     color: @text;
-    background: @mantle;
+    padding: 2px 4px;
 }
 
-#workspaces,
-#mpris {
-    padding-left: 8px;
+#workspaces {
+    padding: 0px;
+    margin: 0px;
 }
 
-#tray,
-#temperature,
-#privacy,
-#network,
-#wireplumber,
-#backlight,
-#battery,
-#clock {
-    padding-right: 14px;
+#workspaces button {
+    color: @text;
+}
+
+#workspaces button.visible {
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: @surface0;
+    color: @text;
 }
 
 #workspaces button.active {
     background: @blue;
-    color: @mantle;
+    color: @base;
 }
 
 #workspaces button.urgent {
     background: @red;
-    color: @mantle;
+    color: @base;
 }
 
-#network.disconnected {
-    color: @red;
+#clock {
+    color: @text;
+    padding: 0 12px;
+}
+
+#tray,
+#network,
+#wireplumber,
+#battery {
+    padding: 0 8px;
 }
 
 #battery.charging {

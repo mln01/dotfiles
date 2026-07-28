@@ -1,66 +1,65 @@
 {
   "layer": "bottom",
   "position": "top",
-  "margin": 2,
+  "height": 36,
+  "margin-top": 3,
+  "margin-bottom": 3,
+  "margin-left": 256,
+  "margin-right": 256,
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["mpris"],
-  "modules-right": ["tray", "network", "wireplumber", "battery", "clock"],
+  "modules-right": ["wireplumber", "battery", "clock"],
   "hyprland/workspaces": {
-    "tooltip": false,
-  },
-  "mpris": {
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "dynamic-len": 50,
-    "interval": 10,
-    "tooltip": false,
-    "player-icons": {
-      "default": "",
-    },
-    "status-icons": {
-      "paused": "",
-    },
-    "ignored-players": [],
-  },
-  "tray": {
-    "icon-size": 18,
-    "spacing": 8,
-    "tooltip": false,
-    "icons": {},
-  },
-  "network": {
-    "format-wifi": "",
-    "format-ethernet": "",
-    "format-disconnected": "Disconnected",
-    "tooltip": false,
-    "max-length": 50
-  },
-  "wireplumber": {
-    "format": " {icon} {volume}%",
-    "format-muted": "",
-    "on-click": "pavucontrol",
-    "max-volume": 100,
-    "tooltip": false,
-    "format-icons": ["", "", ""],
-  },
-  "battery": {
-    "interval": 60,
-    "tooltip": false,
-    "states": {
-      "warning": 30,
-      "critical": 15,
-    },
-    "format": "{icon} {capacity}%",
+    "format": "{icon}",
     "format-icons": {
-      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+        "1": "one",
+        "2": "two",
+        "3": "three",
+        "4": "four",
+        "5": "five",
+        "6": "six",
+        "7": "seven",
+        "8": "eight",
+        "9": "nine",
+        "10": "ten",
     },
+    "tooltip": false,
   },
   "clock": {
     "interval": 60,
-    "format": " {:%m-%d %H:%M}",
-    "max-length": 25,
-    "tooltip": false,
+    "format": "{:%H:%M %a %b %d}",
+    "tooltip": false
   },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 5,
+    "tooltip": true
+  },
+  "network": {
+    "format-wifi": "{icon}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰤮",
+    "tooltip": false,
+    "on-click": "ghostty -e nmtui",
+  },
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": "󰝟",
+    "format-icons": ["", "", ""],
+    "scroll-step": 1,
+    "tooltip": false,
+    "on-click": "pavucontrol"
+  },
+  "battery": {
+    "interval": 30,
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% 󰂄",
+    "tooltip": true,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  }
 }
