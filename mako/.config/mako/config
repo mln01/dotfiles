@@ -1,11 +1,11 @@
-font=SF Pro Display 13
+font=JetBrainsMono Nerd Font 13
 
 background-color=#414559
 text-color=#c6d0f5
 progress-color=over #414559
 
-border-size=3
-border-radius=16
+border-size=2
+border-radius=8
 border-color=#ef9f76
 margin=2,2
 padding=2,2

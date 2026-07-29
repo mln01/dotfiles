@@ -8,7 +8,7 @@
   "margin-right": 256,
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces"],
-  "modules-right": ["wireplumber", "battery", "clock"],
+  "modules-right": ["tray", "wireplumber", "battery", "clock"],
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -32,8 +32,7 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 5,
-    "tooltip": true
+    "spacing": 3,
   },
   "network": {
     "format-wifi": "{icon}",
