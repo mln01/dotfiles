@@ -3,7 +3,6 @@ local terminal = "ghostty +new-window"
 local fileManager = "nemo"
 local menu = "fuzzel"
 local browser = "brave-origin-nightly"
-local editor = "zeditor"
 local lock = "hyprlock"
 local music = "cider"
 
@@ -12,12 +11,14 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + E",hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(music))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(lock))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("fullscreen", "toggle"))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("maximized", "toggle"))
+hl.bind(mainMod .. " + SHIFT + K", function()
+    hl.exec_cmd("cliphist list | fuzzel --width 75 --lines 20 --dmenu | cliphist decode | wl-copy")
+end)
 
 hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))

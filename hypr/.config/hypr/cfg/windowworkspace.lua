@@ -43,16 +43,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "zed-w3",
-
-    match = {
-        class = "dev.zed.Zed",
-    },
-
-    workspace = 3,
-})
-
-hl.window_rule({
     name = "fm-w5",
 
     match = {
