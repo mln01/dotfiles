@@ -43,13 +43,14 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "fm-w5",
+    name = "filemanager",
 
     match = {
         class = "nemo",
     },
 
-    workspace = 5,
+    float = true,
+    size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
 })
 
 hl.window_rule({
@@ -70,4 +71,17 @@ hl.window_rule({
     },
 
     workspace = 8,
+    float = true,
+    size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
+})
+
+hl.window_rule({
+    name = "waypaper",
+
+    match = {
+      class = "waypaper",
+    },
+
+    float = true,
+    size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
 })

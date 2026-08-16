@@ -19,6 +19,7 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("maximized", "toggle"))
 hl.bind(mainMod .. " + SHIFT + K", function()
     hl.exec_cmd("cliphist list | fuzzel --width 75 --lines 20 --dmenu | cliphist decode | wl-copy")
 end)
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper"))
 
 hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
