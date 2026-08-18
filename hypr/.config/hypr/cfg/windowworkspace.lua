@@ -50,7 +50,8 @@ hl.window_rule({
     },
 
     float = true,
-    size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
+    center = true,
+    size = {"(monitor_w*0.6)", "(monitor_h*0.7)"},
 })
 
 hl.window_rule({
@@ -72,7 +73,8 @@ hl.window_rule({
 
     workspace = 8,
     float = true,
-    size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
+    center = true,
+    size = {"(monitor_w*0.5)", "(monitor_h*0.6)"},
 })
 
 hl.window_rule({
@@ -83,5 +85,6 @@ hl.window_rule({
     },
 
     float = true,
+    center = true,
     size = {"(monitor_w*0.4)", "(monitor_h*0.5)"},
 })
