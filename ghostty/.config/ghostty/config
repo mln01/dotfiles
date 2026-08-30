@@ -1,5 +1,5 @@
 font-family = JetBrains Mono NF Medium 
-font-size = 15
+font-size = 16
 theme = Catppuccin Frappe
 
 shell-integration-features = no-cursor
@@ -8,8 +8,8 @@ cursor-style-blink = false
 mouse-hide-while-typing = true
 
 alpha-blending = native
-window-padding-x = 5
-window-padding-y = 5
+window-padding-x = 8
+window-padding-y = 8
 
 keybind = alt+shift+r=reload_config
 
@@ -27,6 +27,10 @@ keybind = alt+u=new_split:down
 keybind = alt+i=new_split:right
 
 keybind = alt+f=toggle_split_zoom
+
+keybind = alt+shift+ó=increase_font_size:1.5
+keybind = alt+shift+ü=decrease_font_size:1.5
+keybind = alt+shift+0=reset_font_size
 
 keybind = alt+t=new_tab
 keybind = alt+shift+t=move_tab:-1

@@ -23,7 +23,7 @@ hl.config({
 
         active_opacity   = 1,
         inactive_opacity = 1,
-    
+
         shadow = {
             enabled      = false,
         },

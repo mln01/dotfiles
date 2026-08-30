@@ -68,7 +68,7 @@ hl.window_rule({
     name = "localsend-w8",
 
     match = {
-        class = "localsend",
+        class = "org.localsend.localsend_app",
     },
 
     workspace = 8,
