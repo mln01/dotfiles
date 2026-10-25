@@ -36,7 +36,7 @@ hl.window_rule({
 	name = "browser-w2",
 
 	match = {
-		class = "brave-origin-nightly",
+		class = "brave-origin",
 	},
 
 	workspace = 2,

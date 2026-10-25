@@ -1,12 +1,26 @@
 {
   "layer": "bottom",
   "position": "top",
-  "margin-top": 16,
+  "margin-top": 24,
   "margin-left": 24,
   "margin-right": 24,
   "reload_style_on_change": true,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-right": ["tray", "wireplumber", "battery", "clock"],
+  "include": [
+    "~/.config/waybar/modules.jsonc"
+  ],
+  "modules-left": [
+    "hyprland/workspaces",
+  ],
+  "modules-center": [
+    
+  ],
+  "modules-right": [
+    "tray",
+    "wireplumber",
+    "network",
+    "battery",
+    "group/clock-pill"
+  ],
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
@@ -23,14 +37,16 @@
     },
     "tooltip": false,
   },
-  "clock": {
-    "interval": 60,
-    "format": "{:%H:%M %a %b %d}",
-    "tooltip": false
+  "group/clock-pill": {
+    "orientation": "horizontal",
+    "modules": [
+      "clock#date",
+      "clock#time",
+    ],
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 3,
+    "spacing": 8,
   },
   "network": {
     "format-wifi": "{icon}",
@@ -38,7 +54,7 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip": false,
-    "on-click": "ghostty -e nmtui",
+    "on-click": "kitty -e nmtui",
   },
   "wireplumber": {
     "format": "{volume}% {icon}",
@@ -54,8 +70,8 @@
     "format-charging": "{capacity}% 󰂄",
     "tooltip": true,
     "states": {
-      "warning": 30,
-      "critical": 15
+      "warning": 40,
+      "critical": 25
     },
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   }

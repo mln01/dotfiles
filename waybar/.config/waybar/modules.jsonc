@@ -1,0 +1,13 @@
+{
+    "clock#date": {
+        "format": "<span color='#8caaee' font='JetBrainsMono Nerd Font Mono'> </span>{:%a %b %d}",
+        "interval": 60,
+        "tooltip": false
+    },
+
+    "clock#time": {
+        "format": "{:%H:%M}",
+        "interval": 60,
+        "tooltip": false
+    },
+}
