@@ -1,90 +1,96 @@
 local suppressMaximizeRule = hl.window_rule({
-    -- Ignore maximize requests from all apps. You'll probably like this.
-    name  = "suppress-maximize-events",
-    match = { class = ".*" },
+	-- Ignore maximize requests from all apps. You'll probably like this.
+	name = "suppress-maximize-events",
+	match = { class = ".*" },
 
-    suppress_event = "maximize",
+	suppress_event = "maximize",
 })
 -- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
-    -- Fix some dragging issues with XWayland
-    name  = "fix-xwayland-drags",
-    match = {
-        class      = "^$",
-        title      = "^$",
-        xwayland   = true,
-        float      = true,
-        fullscreen = false,
-        pin        = false,
-    },
+	-- Fix some dragging issues with XWayland
+	name = "fix-xwayland-drags",
+	match = {
+		class = "^$",
+		title = "^$",
+		xwayland = true,
+		float = true,
+		fullscreen = false,
+		pin = false,
+	},
 
-    no_focus = true,
+	no_focus = true,
 })
 
 hl.window_rule({
-    name = "term-w1",
+	name = "term-w1",
 
-    match = {
-        class = "com.mitchellh.ghostty",
-    },
+	match = {
+		class = "kitty",
+	},
 
-    workspace = 1,
+	workspace = 1,
 })
 
 hl.window_rule({
-    name = "browser-w2",
+	name = "browser-w2",
 
-    match = {
-        class = "brave-origin-nightly",
-    },
+	match = {
+		class = "brave-origin-nightly",
+	},
 
-    workspace = 2,
+	workspace = 2,
 })
 
 hl.window_rule({
-    name = "filemanager",
+	name = "filemanager",
 
-    match = {
-        class = "nemo",
-    },
+	match = {
+		class = "nemo",
+	},
 
-    float = true,
-    center = true,
-    size = {"(monitor_w*0.6)", "(monitor_h*0.7)"},
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
 })
 
 hl.window_rule({
-    name = "music-w10",
+	name = "music-w10",
 
-    match = {
-        class = "cider",
-    },
+	match = {
+		class = "cider",
+	},
 
-    workspace = 10,
+	workspace = 10,
 })
 
 hl.window_rule({
-    name = "localsend-w8",
+	name = "localsend-w8",
 
-    match = {
-        class = "org.localsend.localsend_app",
-    },
+	match = {
+		class = "org.localsend.localsend_app",
+	},
 
-    workspace = 8,
-    float = true,
-    center = true,
-    size = {"(monitor_w*0.5)", "(monitor_h*0.6)"},
+	workspace = 8,
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.5)", "(monitor_h*0.6)" },
 })
 
 hl.window_rule({
-    name = "waypaper",
+	name = "waypaper",
 
-    match = {
-      class = "waypaper",
-    },
+	match = {
+		class = "waypaper",
+	},
 
-    float = true,
-    center = true,
-    size = {"(monitor_w*0.6)", "(monitor_h*0.7)"},
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
+})
+
+hl.workspace_rule({
+	workspace = "7",
+	monitor = "HDMI-A-1",
+	default = true,
 })

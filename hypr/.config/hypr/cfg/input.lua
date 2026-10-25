@@ -1,25 +1,25 @@
 hl.config({
-    input = {
-        kb_layout     = "hu",
-        kb_variant    = "",
-        kb_model      = "",
-        kb_options    = "",
-        kb_rules      = "",
+	input = {
+		kb_layout = "hu",
+		kb_variant = "",
+		kb_model = "",
+		kb_options = "",
+		kb_rules = "",
 
-        follow_mouse  = 1,
+		follow_mouse = 1,
 
-        accel_profile = "flat",
+		accel_profile = "flat",
 
-        sensitivity   = 0,
+		sensitivity = 0,
 
-        touchpad      = {
-            natural_scroll = true,
-        },
-    },
+		touchpad = {
+			natural_scroll = true,
+		},
+	},
 })
 
 hl.gesture({
-    fingers = 3,
-    direction = "horizontal",
-    action = "workspace"
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
 })

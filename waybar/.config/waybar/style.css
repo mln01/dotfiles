@@ -1,5 +1,4 @@
 @define-color rosewater #f2d5cf;
-@define-color flamingo #eebebe;
 @define-color pink #f4b8e4;
 @define-color mauve #ca9ee6;
 @define-color red #e78284;
@@ -29,51 +28,45 @@
     font-family: "JetBrainsMono Nerd Font Propo";
     font-size: 16px;
     font-weight: 500;
-    border-radius: 12px;
+    border-radius: 0px;
 }
 
 window#waybar {
-    /*border-radius: 8px; */
-    background: @base;
-    color: @text;
+    background: none;
 }
+
+.modules-left,
+.modules-right {
+    background-color: @base;
+    color: @text;
+} 
 
 tooltip {
-    background: @base;
+    background-color: @base;
     color: @text;
-    padding: 2px 4px;
-}
-
-#workspaces {
-    padding: 0px;
-    margin: 0px;
+    /* padding: 2px 4px; */
 }
 
 #workspaces button {
     color: @text;
 }
 
-#workspaces button.visible {
-    color: @text;
-}
-
 #workspaces button:hover {
-    background: @surface0;
-    color: @text;
+    color: @blue;
 }
 
 #workspaces button.active {
-    background: @blue;
-    color: @base;
+    color: @blue;
 }
 
 #workspaces button.urgent {
-    background: @red;
-    color: @base;
+    color: @red;
 }
 
 #clock {
-    color: @text;
+    background-color: @blue;
+    color: @base;
+    margin: 6px;
     padding: 0 12px;
 }
 

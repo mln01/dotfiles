@@ -1,20 +1,20 @@
 local mainMod = "SUPER"
-local terminal = "ghostty +new-window"
+local terminal = "kitty"
 local fileManager = "nemo"
 local menu = "fuzzel"
 local browser = "brave-origin-nightly"
 local lock = "hyprlock"
 local music = "cider"
 local normal = {
-	gaps_in = 8,
-	gaps_out = 8,
+	gaps_in = 10,
+	gaps_out = 24,
 	border_size = 4,
-	rounding = 8,
+	rounding = 0,
 }
 local focus = {
 	gaps_in = 0,
 	gaps_out = 0,
-	border_size = 2,
+	border_size = 4,
 	rounding = 0,
 }
 local focus_mode = false
