@@ -1,5 +1,27 @@
 theme="catppuccin_frappe"
 
+[editor]
+line-number = "relative"
+trim-final-newlines = true
+trim-trailing-whitespace = true
+popup-border = "all"
+
+[editor.lsp]
+display-progress-messages = true
+# display-inlay-hints = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
 [keys.normal]
 C-y = [
 	':sh rm -f /tmp/unique-ca1ea106',
