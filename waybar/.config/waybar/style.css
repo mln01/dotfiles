@@ -46,6 +46,7 @@ tooltip {
 }
 
 #workspaces button:hover {
+    background-color: @base;
     color: @blue;
 }
 
@@ -75,6 +76,7 @@ tooltip {
 #tray,
 #network,
 #wireplumber,
+#bluetooth,
 #battery {
     background-color: @base;
     color: @text;
@@ -96,6 +98,7 @@ tooltip {
 
 #network:hover,
 #wireplumber:hover,
+#bluetooth:hover,
 #battery:hover {
     color:@blue;
 }

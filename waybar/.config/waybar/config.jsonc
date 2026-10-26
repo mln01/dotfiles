@@ -17,6 +17,7 @@
   "modules-right": [
     "tray",
     "wireplumber",
+    "bluetooth",
     "network",
     "battery",
     "group/clock-pill"
@@ -54,7 +55,7 @@
     "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip": false,
-    "on-click": "kitty -e nmtui",
+    "on-click": "kitty --class wifitui -e wifitui",
   },
   "wireplumber": {
     "format": "{volume}% {icon}",
@@ -62,7 +63,18 @@
     "format-icons": ["", "", ""],
     "scroll-step": 1,
     "tooltip": false,
-    "on-click": "pavucontrol"
+    "on-click": "kitty --class wiremix -e wiremix"
+  },
+  "bluetooth": {
+  	"format": " {status}",
+  	"format-disabled": "󰂲 {status}", // an empty format will hide the module
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+  	"format-connected": " {num_connections} connected",
+  	"tooltip-format": "{controller_alias}\t{controller_address}",
+  	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+  	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+  	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+  	"on-click": "kitty --class bluetui -e bluetui"
   },
   "battery": {
     "interval": 30,

@@ -43,6 +43,16 @@ hl.window_rule({
 })
 
 hl.window_rule({
+	name = "zathura-w6",
+
+	match = {
+		class = "org.pwmt.zathura",
+	},
+
+	workspace = 6,
+})
+
+hl.window_rule({
 	name = "filemanager",
 
 	match = {
@@ -82,6 +92,54 @@ hl.window_rule({
 
 	match = {
 		class = "waypaper",
+	},
+
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
+})
+
+hl.window_rule({
+	name = "wiremix",
+
+	match = {
+		class = "wiremix",
+	},
+
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
+})
+
+hl.window_rule({
+	name = "bluetui",
+
+	match = {
+		class = "bluetui",
+	},
+
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
+})
+
+hl.window_rule({
+	name = "wifitui",
+
+	match = {
+		class = "wifitui",
+	},
+
+	float = true,
+	center = true,
+	size = { "(monitor_w*0.6)", "(monitor_h*0.7)" },
+})
+
+hl.window_rule({
+	name = "keepassxc",
+
+	match = {
+		class = "org.keepassxc.KeePassXC",
 	},
 
 	float = true,
