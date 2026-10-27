@@ -1,0 +1,12 @@
+[[language]]
+name = "lua"
+auto-format = true
+roots = ["hyprland.lua", "lookandfeel.lua"]
+
+[language-server.lua-language-server]
+command = "lua-language-server"
+
+[language-server.lua-language-server.config.Lua]
+diagnostics.globals = ["hl"]
+workspace.library = ["/usr/share/hypr/stubs"]
+workspace.checkThirdParty = "Disable"
