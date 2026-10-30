@@ -32,3 +32,6 @@ C-y = [
 	':set mouse false',
   ':set mouse true',
 ]
+
+[keys.insert]
+j = { k = "normal_mode" }

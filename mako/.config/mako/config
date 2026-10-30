@@ -1,18 +1,18 @@
-font=JetBrainsMono Nerd Font 14
+font=JetBrainsMono 12
 
 background-color=#414559
 text-color=#c6d0f5
 progress-color=over #414559
 
-border-size=4
+border-size=2
 border-radius=0
 border-color=#ef9f76
-margin=16,4
-padding=2,4
+margin=16,0
+padding=6,6
 default-timeout=7500
 max-visible=3
 layer=overlay
 
 anchor=top-center
-width=600
+width=400
 height=280
