@@ -1,4 +1,4 @@
-font=JetBrainsMono 12
+font=JetBrainsMono 12.7
 
 background-color=#414559
 text-color=#c6d0f5
@@ -9,6 +9,8 @@ border-radius=0
 border-color=#ef9f76
 margin=16,0
 padding=6,6
+icons=0
+max-icon-size=64
 default-timeout=7500
 max-visible=3
 layer=overlay
