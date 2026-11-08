@@ -6,14 +6,14 @@ local browser = "brave-origin"
 local lock = "hyprlock"
 local music = "cider"
 local normal = {
-	gaps_in = 10,
-	gaps_out = 24,
+	gaps_in = 8,
+	gaps_out = 16,
 	border_size = 4,
 	rounding = 0,
 }
 local focus = {
-	gaps_in = 0,
-	gaps_out = 0,
+	gaps_in = 4,
+	gaps_out = 4,
 	border_size = 4,
 	rounding = 0,
 }
@@ -31,13 +31,8 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(music))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(lock))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen("fullscreen"))
-hl.bind(mainMod .. " + SHIFT + K", function()
-	hl.exec_cmd("cliphist list | fuzzel --width 75 --lines 20 --dmenu | cliphist decode | wl-copy")
-end)
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper"))
-hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
-hl.bind(mainMod .. " + F", function()
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("fullscreen"))
+hl.bind(mainMod .. " + SHIFT + F", function()
 	focus_mode = not focus_mode
 
 	hl.config({
@@ -53,6 +48,11 @@ hl.bind(mainMod .. " + F", function()
 
 	hl.dispatch(hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 end)
+hl.bind(mainMod .. " + SHIFT + K", function()
+	hl.exec_cmd("cliphist list | fuzzel --width 75 --lines 20 --dmenu | cliphist decode | wl-copy")
+end)
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("waypaper"))
+hl.bind(mainMod .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 
 hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))

@@ -1,9 +1,9 @@
 {
   "layer": "bottom",
   "position": "top",
-  "margin-top": 24,
-  "margin-left": 24,
-  "margin-right": 24,
+  "margin-top": 16,
+  "margin-left": 16,
+  "margin-right": 16,
   "reload_style_on_change": true,
   "include": [
     "~/.config/waybar/modules.jsonc"
@@ -12,7 +12,7 @@
     "hyprland/workspaces",
   ],
   "modules-center": [
-    
+
   ],
   "modules-right": [
     "tray",
