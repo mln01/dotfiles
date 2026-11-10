@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local terminal = "kitty"
+local terminal = "kitty -e tmux"
 local fileManager = "nemo"
 local menu = "fuzzel"
 local browser = "brave-origin"
