@@ -1,7 +1,7 @@
 [[language]]
 name = "lua"
 auto-format = true
-roots = ["hyprland.lua", "lookandfeel.lua"]
+roots = ["hyprland.lua", "appearance.lua"]
 
 [language-server.lua-language-server]
 command = "lua-language-server"

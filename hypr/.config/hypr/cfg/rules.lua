@@ -36,7 +36,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "workspace-5",
 	match = {
-		class = "^(vesktop)$",
+		class = "^(vesktop|steam|heroic)$",
 	},
 	workspace = 5,
 })
@@ -44,7 +44,7 @@ hl.window_rule({
 hl.window_rule({
 	name = "workspace-10",
 	match = {
-		class = "cider",
+		class = "^(cider)$",
 	},
 	workspace = 10,
 })
@@ -88,7 +88,7 @@ hl.window_rule({
 	name = "float-center-large",
 
 	match = {
-		class = "^(vesktop)$",
+		class = "^()$",
 	},
 
 	float = true,
