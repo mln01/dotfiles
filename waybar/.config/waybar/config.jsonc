@@ -47,18 +47,18 @@
   },
   "tray": {
     "icon-size": 16,
-    "spacing": 8,
+    "spacing": 4,
   },
   "network": {
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon} Wi-Fi",
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "format-ethernet": "󰈀",
-    "format-disconnected": "󰤮",
+    "format-ethernet": "󰈀 Ethernet",
+    "format-disconnected": "󰤮 Disconnected",
     "tooltip": false,
     "on-click": "kitty --class wifitui -e wifitui",
   },
   "wireplumber": {
-    "format": "{volume}% {icon}",
+    "format": "{icon} {volume}%",
     "format-muted": "󰝟",
     "format-icons": ["", "", ""],
     "scroll-step": 1,
@@ -67,7 +67,8 @@
   },
   "bluetooth": {
   	"format": " {status}",
-  	"format-disabled": "󰂲 {status}", // an empty format will hide the module
+  	"format-disabled": "󰂲 {status}",
+  	"format-no-controller": "",
     "format-connected-battery": " {device_alias} {device_battery_percentage}%",
   	"format-connected": " {num_connections} connected",
   	"tooltip-format": "{controller_alias}\t{controller_address}",
@@ -78,12 +79,12 @@
   },
   "battery": {
     "interval": 30,
-    "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% 󰂄",
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
     "tooltip": true,
     "states": {
       "warning": 40,
-      "critical": 25
+      "critical": 20
     },
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   }

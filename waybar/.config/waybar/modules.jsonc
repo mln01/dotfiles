@@ -1,6 +1,6 @@
 {
     "clock#date": {
-        "format": "<span color='#8caaee' font='JetBrainsMono Nerd Font Mono'> </span>{:%a %b %d}",
+        "format": "<span color='#8caaee' font='JetBrainsMono Nerd Font Propo'> </span>{:%a %b %d}",
         "interval": 60,
         "tooltip": false
     },
